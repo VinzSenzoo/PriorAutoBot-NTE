@@ -84,6 +84,11 @@ function addLog(message, type) {
   updateLogs();
 }
 
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
 function getRandomDelay() {
   return Math.random() * (60000 - 30000) + 30000;
 }
